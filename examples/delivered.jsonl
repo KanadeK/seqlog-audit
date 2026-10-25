@@ -1,0 +1,5 @@
+{"stream":"api","seq":0,"message":"synthetic fixture"}
+{"stream":"api","seq":3,"message":"synthetic fixture"}
+{"stream":"api","seq":1,"message":"late arrival"}
+{"stream":"api","seq":1,"message":"repeated identity"}
+{"stream":"api","seq":4,"message":"synthetic fixture"}

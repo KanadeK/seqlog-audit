@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seqlog-audit"
+version = "0.1.0"
+description = "Disk-backed sequence delivery checks for JSONL logs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "KanadeK"}]
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+seqlog-audit = "seqlog_audit.cli:main"
+
+[project.urls]
+Repository = "https://github.com/KanadeK/seqlog-audit"
+Issues = "https://github.com/KanadeK/seqlog-audit/issues"
+
+[tool.setuptools.packages.find]
+include = ["seqlog_audit*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]
